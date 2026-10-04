@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Home | AMMRC</title>
-  <link rel="stylesheet" href="style.css?v=20261004-home-user-images-1">
+  <link rel="stylesheet" href="style.css?v=20261004-home-material-balanced-1">
   <style>
     .home-theme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
     .home-theme-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 10px 28px rgba(20,40,70,.07);transition:transform .18s ease,box-shadow .18s ease}
@@ -73,24 +73,24 @@
         <figure class="theme-media"><img src="images/faculty/Membrane%20seperation.png" alt="Membrane separation materials"></figure>
         <div class="theme-copy">
           <h3 id="home-theme-1-title">Membrane Separation</h3>
-          <p id="home-theme-1-text">Porous polymer, MOF/COF and mixed-matrix materials for molecular, gas and water separation.</p>
-          <span class="material-note">MOF · COF · Mixed-Matrix Membranes</span>
+          <p id="home-theme-1-text">Polymeric, mixed-matrix and porous-framework membranes incorporating MOFs/COFs for molecular, gas and water separation.</p>
+          <span class="material-note" id="home-theme-1-note">Polymers · MOF/COF · Mixed-Matrix Membranes</span>
         </div>
       </article>
       <article class="home-theme-card">
         <figure class="theme-media"><img src="images/faculty/Energy%20and%20Ionic%20trasport.png" alt="Energy and ionic transport membrane materials"></figure>
         <div class="theme-copy">
           <h3 id="home-theme-2-title">Energy &amp; Ionic Transport</h3>
-          <p id="home-theme-2-text">Ion-conductive membranes and framework materials for electrochemical energy conversion and storage.</p>
-          <span class="material-note">Ionic Membranes · COF/MOF Frameworks</span>
+          <p id="home-theme-2-text">Ion-conductive polymers, inorganic nanomaterials and engineered nanochannels for fuel cells, batteries and electrochemical energy systems.</p>
+          <span class="material-note" id="home-theme-2-note">Ion-Conductive Polymers · Nanocomposites · Energy Materials</span>
         </div>
       </article>
       <article class="home-theme-card">
         <figure class="theme-media"><img src="images/faculty/Interface%20and%20smart%20membrane.png" alt="Interface and smart membrane materials"></figure>
         <div class="theme-copy">
           <h3 id="home-theme-3-title">Interface &amp; Smart Membrane Materials</h3>
-          <p id="home-theme-3-text">Surface-engineered membrane materials for selective transport, sensing and smart response.</p>
-          <span class="material-note">Surface Engineering · COF · Smart Materials</span>
+          <p id="home-theme-3-text">Graphene, MXene and other 2D materials combined with surface/interface engineering for selective transport, sensing and smart response.</p>
+          <span class="material-note" id="home-theme-3-note">Graphene · MXene · 2D Materials · Surface Engineering</span>
         </div>
       </article>
     </div>
@@ -98,22 +98,22 @@
 </section>
 
 <footer class="footer"><div class="wrap">© Advanced Membrane Materials Research Center · National Taiwan University of Science and Technology</div></footer>
-<script src="language.js?v=20261004-home-user-images-1"></script>
+<script src="language.js?v=20261004-home-material-balanced-1"></script>
 <script>
 (function(){
   const themeText={
     en:{
-      t1:'Membrane Separation',x1:'Porous polymer, MOF/COF and mixed-matrix materials for molecular, gas and water separation.',
-      t2:'Energy & Ionic Transport',x2:'Ion-conductive membranes and framework materials for electrochemical energy conversion and storage.',
-      t3:'Interface & Smart Membrane Materials',x3:'Surface-engineered membrane materials for selective transport, sensing and smart response.'
+      t1:'Membrane Separation',x1:'Polymeric, mixed-matrix and porous-framework membranes incorporating MOFs/COFs for molecular, gas and water separation.',n1:'Polymers · MOF/COF · Mixed-Matrix Membranes',
+      t2:'Energy & Ionic Transport',x2:'Ion-conductive polymers, inorganic nanomaterials and engineered nanochannels for fuel cells, batteries and electrochemical energy systems.',n2:'Ion-Conductive Polymers · Nanocomposites · Energy Materials',
+      t3:'Interface & Smart Membrane Materials',x3:'Graphene, MXene and other 2D materials combined with surface/interface engineering for selective transport, sensing and smart response.',n3:'Graphene · MXene · 2D Materials · Surface Engineering'
     },
     zh:{
-      t1:'薄膜分離',x1:'以多孔高分子、MOF／COF 與混合基質材料，發展分子、氣體與水分離薄膜。',
-      t2:'能源與離子傳輸',x2:'結合離子導電薄膜與多孔框架材料，應用於電化學能源轉換與儲能。',
-      t3:'界面與智慧薄膜材料',x3:'以表面／界面工程及 COF 等功能材料，發展選擇性傳輸、感測與智慧響應薄膜。'
+      t1:'薄膜分離',x1:'以高分子、混合基質與多孔框架薄膜整合 MOF／COF 材料，發展分子、氣體與水分離技術。',n1:'高分子 · MOF/COF · 混合基質薄膜',
+      t2:'能源與離子傳輸',x2:'發展離子導電高分子、無機奈米材料與工程化奈米通道，應用於燃料電池、電池及電化學能源系統。',n2:'離子導電高分子 · 奈米複合材料 · 能源材料',
+      t3:'界面與智慧薄膜材料',x3:'整合 Graphene、MXene 與其他二維材料及表面／界面工程，發展選擇性傳輸、感測與智慧響應功能。',n3:'Graphene · MXene · 二維材料 · 表面工程'
     }
   };
-  function applyThemeLang(lang){const d=themeText[lang]||themeText.en;['1','2','3'].forEach(n=>{const t=document.getElementById('home-theme-'+n+'-title');const x=document.getElementById('home-theme-'+n+'-text');if(t)t.textContent=d['t'+n];if(x)x.textContent=d['x'+n]})}
+  function applyThemeLang(lang){const d=themeText[lang]||themeText.en;['1','2','3'].forEach(n=>{const t=document.getElementById('home-theme-'+n+'-title');const x=document.getElementById('home-theme-'+n+'-text');const note=document.getElementById('home-theme-'+n+'-note');if(t)t.textContent=d['t'+n];if(x)x.textContent=d['x'+n];if(note)note.textContent=d['n'+n]})}
   document.addEventListener('DOMContentLoaded',()=>applyThemeLang(localStorage.getItem('ammrcLang')||'en'));
   document.addEventListener('ammrc-language',e=>applyThemeLang(e.detail.lang));
 })();
